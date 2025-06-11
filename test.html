@@ -1121,18 +1121,7 @@ a
 
             });
 
-            // window.location.href = './2.html';
-
-
-
-            // document.getElementById("loadingg_slow_vercel").classList.add("hidd");
-
-            // alert('Error. Couldn`t Submit');
-
-
-
-
-            //document.getElementById("submitt0").style.pointerEvents = 'auto';
+  
             correctAnswered.forEach(e => {
                 document.getElementById('itemm_' + e).classList.add("crt")
 
@@ -1142,6 +1131,7 @@ a
 
             });
             wrongAnswered.forEach(e => {
+
                 document.getElementById('itemm_' + e).classList.add("wrng")
                 document.getElementById('itemm_' + e).querySelectorAll('div.donee').forEach(div => {
                     div.style.borderColor = 'red';
@@ -1153,11 +1143,15 @@ a
 
 
             });
-            notAnswered.forEach(e => {
-                document.getElementById('itemm_' + e).classList.add("emptye")
-                document.getElementById('itemm_' + e).classList.add("hidd")
+            notAnswered.forEach(ek => {
+             
+                
+                if( document.getElementById('itemm_' + ek)){
 
+              document.getElementById('itemm_' + ek).classList.add("emptye")
+                document.getElementById('itemm_' + ek).classList.add("hidd")
 
+            }
 
             });
 
